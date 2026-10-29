@@ -1,0 +1,15 @@
+{
+  "emulator": {
+    "name": "Azahar",
+    "repository": "https://github.com/azahar-emu/azahar.git",
+    "tag": "2126.2",
+    "commit": "219d743a1e698101fe1ab8bef43e6563126c3c27",
+    "bridgeProtocol": "azahar-rsa-3",
+    "driverVersion": "2126.2-rsa.3"
+  },
+  "extractedFrom": {
+    "repository": "https://github.com/luokerenx4/Ludens-alpha.git",
+    "commit": "804c3363efcd8bbdbed5392901aa68bcb264a5f8",
+    "paths": ["baseware/src/drivers/azahar", "baseware/src/drivers", "baseware/src/contracts.ts", "baseware/src/tool-contract.ts", "baseware/tests", "shared/timeline-types.ts"]
+  }
+}

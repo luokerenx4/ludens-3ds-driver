@@ -1,0 +1,28 @@
+{
+  "name": "@ludens-community/driver-azahar",
+  "version": "2126.2-rsa.3",
+  "type": "module",
+  "main": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": ["src", "native", "scripts", "README.md", "upstream.json"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "native:test": "bun test tests/pad-native.test.ts",
+    "scripts:check": "bash -n scripts/build.sh scripts/launch.sh scripts/paths.sh scripts/check-patch.sh",
+    "emulator:patch-check": "bash scripts/check-patch.sh",
+    "emulator:build": "bash scripts/build.sh",
+    "emulator:launch": "bash scripts/launch.sh"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.32.1",
+    "ajv": "8.20.0",
+    "ajv-formats": "3.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "1.3.14",
+    "typescript": "6.0.2"
+  }
+}

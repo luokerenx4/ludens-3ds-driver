@@ -1,0 +1,12 @@
+node_modules/
+*.tsbuildinfo
+coverage/
+.DS_Store
+
+# Emulator sources, builds and games belong outside this driver checkout.
+artifacts/
+workspaces/
+logs/
+*.3ds
+*.cia
+*.sav
